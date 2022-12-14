@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA</h1>
+<br>
+<br>
+
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");		
+	}
+
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+	var anhoEnCurso = 2022 
+
+	var anhoDeMiNacimiento = 1991
+
+	var anhoNacimientoDeMiHermana = 1993
+	
+	var MiEdad = anhoEnCurso - anhoDeMiNacimiento
+
+	var EdadDeMiHermana = anhoEnCurso - anhoNacimientoDeMiHermana
+
+	imprimir("Nuestra diferencia de edad es:");
+
+	imprimir( MiEdad - EdadDeMiHermana)
+
+	imprimir ("Dado que mi edad es: " + MiEdad + " y la edad de mi hermana es: "  + EdadDeMiHermana)
+
+</script>
+
+
+

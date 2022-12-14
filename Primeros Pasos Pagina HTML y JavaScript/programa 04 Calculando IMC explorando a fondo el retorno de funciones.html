@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");		
+		document.write("<br>");		
+		document.write("<br>");		
+	}
+
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+// ASÍ SE HABIA RESUELTO EN UN PRINCIPIO!
+
+//	function calcularImc(peso1,altura1,nombre1,peso2,altura2,nombre2) {
+//		imc1 = peso1 / (altura1 * altura1);
+//		imc2 = peso2 / (altura2 * altura2);
+
+//		imprimir("El promedio del imc calculado de " + nombre1 + " y " + nombre2 + " es: " + (imc1 + imc2)/2);
+//	}
+
+
+//	calcularImc(82.5,1.83,"Leon",75,1.73,"Felipe");
+
+//	calcularImc(60.5,1.70,"Gabriela",55,1.60,"Luisa");
+
+// ASÍ SE MEJORO EL CODIGO: 
+
+	function calcularImc(peso,altura) {
+
+		imc = peso / (altura*altura);
+		return imc;
+		// vimos que tambien sino puedo definir 10 como retorno de la funcion
+
+		// Incluso para simplificar el return y limpiar linea 37 podria quedar así:
+		// return (peso / (altura*altura));
+	}
+
+	var imcLeon = calcularImc(82.5,1.83)
+	var imcFelipe = calcularImc(75,1.73)
+
+	imprimir("El promedio del imc calculado de Leon y Felipe es: " + (imcLeon+imcFelipe)/2)
+
+//	TAMBIEN SE PUEDE SIMPLIFICAR LINEA 42 y 43 quedando así:
+
+// 	imprimir("El promedio del imc calculado de Leon y Felipe es: " + (calcularImc(82.5,1.83)+calcularImc(75,1.73))/2)
+
+</script>
