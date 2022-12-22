@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - PROGRAMA CALCULO NUMEROS PARES DEL 1 AL 100 </h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");		
+		document.write("<br>");		
+		document.write("<br>");		
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+    var contador = 2;
+    while(contador <= 100) {
+        imprimir(contador);
+        contador = contador + 2; // incrementar de dos en dos
+    }
+
+	imprimir("Fin!");
+
+</script>
