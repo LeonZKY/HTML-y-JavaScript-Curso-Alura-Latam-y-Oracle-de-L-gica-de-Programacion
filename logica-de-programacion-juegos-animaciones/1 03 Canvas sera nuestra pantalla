@@ -1,0 +1,13 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	// width: ancho pizarra 
+	// heigth: alto pizarra
+	//se usa posiciones cual plano cartesiano con eje, x e y.
+
+	var pantalla = document.querySelector("canvas"); 
+		// variable pantalla con document.querySelector conectara la etiqueta de HTML <canvas> con acciones de javaScript <script>.
+	var pincel = pantalla.getContext("2d");
+		// Encargado de dibujar/graficar. Con .getContext traera todo el contenido que este en la pantalla y con "2d" estamos trabajando en dos dimensiones ancho y largo.
+
+</script>
