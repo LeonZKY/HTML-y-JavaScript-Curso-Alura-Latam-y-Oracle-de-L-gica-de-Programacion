@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    background: #CCCCCC;   
+}
+
+#banner{
+    width: 100%;  
+}
+
+h1{
+    text-align: center;   
+}
+
+p{
+    text-align: center;   
+}
+
+em strong{
+   color: red;  
+}
+
+#mision{
+    font-size: 20px;  
+ }
+
+.items{
+    font-style: italic;  
+}
