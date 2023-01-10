@@ -1,0 +1,50 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas"); 
+	var pincel = pantalla.getContext("2d");
+
+/* INGRESO MANUAL DE CUADRADO Y COLOR:
+
+	function dibujarCuadradoRojo(x,y){
+		pincel.fillStyle = "red"; 
+		pincel.fillRect(x,y,50,50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect (x,y,50,50);
+	};
+		//	Para indicarle en que posicion quiero cada cuadrado: PRIMERO defino para la variable dibujarCuadradoVerde el parametro "x" en referencia a su ubicacion coordenada horizontal de la funciòn Y TAMBIEN, DENTRO, de la funcion donde se utilice esta variable . SEGUNDO: Escribo funcion "dibujarCuadradoVerde" y le paso posicion.
+		// Si quiero indicarle tambien posicion en vertical, debo entonces tambien agregar segunda variable "y", y luego tambien aclarar en la funcion llamada el valor de la misma.
+
+	function dibujarCuadradoAmarillo(x,y){
+		pincel.fillStyle = "yellow"; 
+		pincel.fillRect(x,y,50,50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect (x,y,50,50);
+	};
+
+	function dibujarCuadradoVerde(x,y){
+		pincel.fillStyle = "green"; 
+		pincel.fillRect(x,y,50,50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect (x,y,50,50);
+	};
+
+	dibujarCuadradoRojo(0,0);
+	dibujarCuadradoAmarillo(0,50);
+	dibujarCuadradoVerde(0,100);
+*/
+
+// PODEMOS SIMPLIFICAR:
+
+	function dibujarCuadrado(x,y,color){
+		pincel.fillStyle = color; 
+		pincel.fillRect(x,y,50,50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect (x,y,50,50);
+	};
+
+	dibujarCuadrado(0,0,"red");
+	dibujarCuadrado(50,0,"yellow");
+	dibujarCuadrado(100,0,"green");
+</script>

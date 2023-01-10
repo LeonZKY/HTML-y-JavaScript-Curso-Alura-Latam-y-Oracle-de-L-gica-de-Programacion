@@ -1,0 +1,19 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+	pincel.fillStyle = "lightgrey";
+	pincel.fillRect(0,0,600,400);
+
+	function disenharCircunferencia(x,y,radio) {
+		pincel.fillStyle = "blue";
+		pincel.beginPath();
+		pincel.arc(x,y,radio,0,2*Math.PI); // Math.Pi Funcion padron de JS para determinar con precision el numero de pi.
+		pincel.fill();
+	}
+
+	disenharCircunferencia(20,20,10);
+
+</script>

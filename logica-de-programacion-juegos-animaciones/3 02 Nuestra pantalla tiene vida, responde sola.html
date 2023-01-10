@@ -1,0 +1,24 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+	pincel.fillStyle = "grey";
+	pincel.fillRect (0,0,600,400);
+
+	function exibirAlerta(evento) {
+		console.log(evento);
+			// Con esto en la consola de desarrollador, en "consola", al hacer click dentro del rectangulo de canvas, automaticamente sale la informacion detallada del click hecho, con coordenadas, objetivo y tipo entre otros.
+		alert ("Usted, hizo un click");
+	}
+		// Creamos parametro evento para que al hacer click diga donde es que se realizò.
+
+	pantalla.onclick = exibirAlerta;
+		// Voy a asociar la funcion alerta a la funcion del click con .onclick (al momento de hacer click) llamar la funcion exibirAlerta. 
+		// Cuidado cuando uso la funcion y la paso como parametro, NO necesito colocar parentesis.
+
+		// Recordar que mi variable pantalla està asociada a la superficie de 600 x 400 de mi canvas.
+
+
+</script>

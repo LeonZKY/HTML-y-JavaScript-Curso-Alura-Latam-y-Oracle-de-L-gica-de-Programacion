@@ -1,0 +1,20 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	var pantalla = document.querySelector("canvas"); 
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "lightgrey"; 
+		// PROPIEDAD/caracteristica fillStyle para definir color. Debo pasarle un valor
+
+	pincel.fillRect(0,0,600,400); 
+		//FUNCION: fill (llenar) Rect (rectangulo). Tiene cuatro parametros: posicion inicial eje x, posicion inicial eje y (ayuda a posicionar), posicion final eje x, posicion inicial eje y. Negra por defecto.
+
+	pincel.fillStyle = "green";
+	pincel.fillRect(0,0,200,400);
+
+	pincel.fillStyle = "red";
+	pincel.fillRect(400,0,400,600);
+
+</script>

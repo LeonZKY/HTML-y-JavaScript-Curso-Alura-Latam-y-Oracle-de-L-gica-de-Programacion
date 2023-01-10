@@ -1,0 +1,31 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+	pincel.fillStyle = "grey";
+	pincel.fillRect (0,0,600,400);
+
+	function mostrarMensaje(evento){
+		var x = evento.pageX - pantalla.offsetLeft; //pos x
+		var y = evento.pageY - pantalla.offsetTop; //pos y
+		var d = new Date(); //crea una variable de tipo date
+		var hora = checkTime(d.getHours()) + ":" + checkTime(d.getMinutes()) + ":" + checkTime(d.getSeconds());
+			//Verifica si el número de las horas, minutos o segundos, tiene un solo dígito, 
+			//caso positivo le adiciona el cero en la frente para obtener el formato deseado 00:00:00
+		function checkTime(i){
+			if (i<10){
+                i="0" + i;
+            }
+			return i;
+		}
+
+        alert("La hora es: " + hora + " y las coordenadas son: x=" + x + ", y=" + y);
+    }
+    
+	pantalla.onclick = mostrarMensaje;
+
+		// Para asociar la función con el evento onclick, le pasamos la función sin los paréntesis y sin ningún parámetro. Lo que nuestro navegador está haciendo entre bastidores es cargar la función en el compilador y cada vez que el usuario hace clic en la pantalla, la función es ejecutada y recibe como parámetro algunas propiedades y características del evento que luego aprovechamos para extraer las coordenadas.
+
+</script>

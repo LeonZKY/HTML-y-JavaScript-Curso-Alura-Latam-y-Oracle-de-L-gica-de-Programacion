@@ -1,0 +1,41 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas"); 
+	var pincel = pantalla.getContext("2d");
+
+
+/* INGRESO MANUAL DE CADA UNO DE LOS CINCO CUADRADOS:
+	pincel.fillStyle = "green"; 
+	pincel.fillRect(0,0,50,50);
+	pincel.strokeStyle = "black";
+		// .strokeStyle define el color del borde del cuadrado
+	pincel.strokeRect (0,0,50,50);
+		// .strokeRect pinta los bordes del cuadrado
+
+	pincel.fillRect(50,0,50,50);
+	pincel.strokeRect (50,0,50,50);
+
+	pincel.fillRect(100,0,50,50);
+	pincel.strokeRect (100,0,50,50);
+
+	pincel.fillRect(150,0,50,50);
+	pincel.strokeRect (150,0,50,50);
+
+	pincel.fillRect(200,0,50,50);
+	pincel.strokeRect (200,0,50,50);
+*/
+
+//	CONVIENE USAR FUNCION
+
+	function dibujarCuadradoVerde(){
+		pincel.fillStyle = "green"; 
+		pincel.fillRect(0,0,50,50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect (0,0,50,50);
+	};
+
+	dibujarCuadradoVerde();
+
+</script>

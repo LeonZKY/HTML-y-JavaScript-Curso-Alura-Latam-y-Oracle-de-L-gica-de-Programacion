@@ -1,0 +1,38 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas"); 
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "lightgrey"; 
+	pincel.fillRect(0,0,600,400);
+
+	pincel.fillStyle = "green";
+	pincel.fillRect(0,0,200,400);
+
+	pincel.fillStyle = "red"; 
+	pincel.fillRect(400,0,400,600);
+
+	pincel.fillStyle = "yellow"; 
+	pincel.beginPath();
+		//.beginPath Instruccion que comienza un nuevo camino a traves de nuestro canvas siguiendo instrucciones
+	pincel.moveTo(300,200);
+		//.moveTo Instruccion que le indica desde que coordenada partir.
+	pincel.lineTo(200,400);
+		// .lineTo Instruccion que le indica que haga una linea hasta la coordenada indicada.
+	pincel.lineTo(400,400);
+		// Aquì le dije que se mueva hasta la coordenada 400,400.
+	pincel.fill();
+		// Aquì le intruyo que llene lo dibujado.
+
+	pincel.fillStyle = "blue"; 
+	pincel.beginPath();
+	pincel.moveTo(300,200);
+	pincel.arc(300,200,50, 0, 2*3.14);
+		// .arc Funcion para graficar circunferencia. Le paso como parametro primero la posicion inicial x e y, luego el tamaño el radio, el  angulo incial 0, y el angulo final 2 veces Pi.
+	pincel.fill();
+
+	/// pincel.fillStyle es una propiedad del objeto pincel y se le está atribuyendo el color verde. Por su parte, la instrucción pincel.fillRect() es una función (método) del objeto pincel que en nuestro código la usábamos para diseñar (dibujar) las figuras.
+
+</script>

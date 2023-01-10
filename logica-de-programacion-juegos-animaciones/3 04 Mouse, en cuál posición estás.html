@@ -1,0 +1,33 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+	pincel.fillStyle = "grey";
+	pincel.fillRect (0,0,600,400);
+
+	function mostrarMensaje(evento){
+		var x = evento.pageX - pantalla.offsetLeft;
+			// Creamos variable x, para darnos la posicion sobre el eje x, que pasa automaticamente el navegador.
+		var y = evento.pageY - pantalla.offsetTop;
+			// Variable y para guardar posicion sobre eje y.
+
+		// La cuestion es que estos datos, toman en cuenta el borde de 8px por defecto de la pantalla completa, al momento de informar las coordenadas. Por lo que conviene restar en cada variable el correspondiente resto (del costado izquierdo .offsetLeft , como del superior .offsetTopsegun el caso de cada variable.
+    }
+
+    function dibujarCirculo (evento) {
+		var x = evento.pageX - pantalla.offsetLeft;
+		var y = evento.pageY - pantalla.	offsetTop;
+		pincel.fillStyle = "blue";
+		pincel.beginPath();
+		pincel.arc(x,y,10,0,2*3.14);
+		pincel.fill();
+		console.log(x + "," + y);
+
+    }
+    	
+//	pantalla.onclick = mostrarMensaje;
+    pantalla.onclick = dibujarCirculo;
+
+</script>
