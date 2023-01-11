@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="stylePRODUCTOS.css">
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
+
+<!-- 
+    Armamos la estructura principal de esta nueva pagina de los PRODUCTOS de la pagina principal de la barberia.
+––>
