@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Dowloads/reset.css">
+
+        <link rel="stylesheet" href="stylePRODUCTOS8.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="dowloads/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="HOME.html">Home</a></li>
+                        <li><a href="02 02 Estructurando la navegacion.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="Dowloads/imagenes/cabello.jpg">
+                    <p class="descripcion">Con tijera o màquina a gusto del cliente.</p>
+                    <p class="precio">$1500</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="Dowloads/imagenes/barba.jpg">
+                    <p class="descripcion">Corte y diseño profesional de barba</p>
+                    <p class="precio">$500</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="Dowloads/imagenes/cabello+barba.jpg">
+                    <p class="descripcion">Paquete completo de cabello y barba</p>
+                    <p class="precio">$1800</p>
+                </li>
+            </ul>
+        </main>
+
+    </body>
+
+</html>
+
+<!-- 
+    Necesitamos capturar evento del movimiento realizado por el usuario cuando se coloca en links de nuestro panel de navegacion y lo mismo cuando nos posicionamos en alguno de los productos. Y, al hacer clik sobre alguno de ellos.
+
+    Para ello vamos al .css:
+    la propiedad "hover" captura el movimiento:
+        nav a:hover{                    //"nav a" para tomar la etiquetas "a" dentro de "nav".
+            color: #c78c19;             //color mostaza al pasar por estos elementos
+            text-decoration: underline; //subrraya elemento.
+        }
+
+––>

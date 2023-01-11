@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Dowloads/reset.css">
+
+        <link rel="stylesheet" href="stylePRODUCTOS3.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="dowloads/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="HOME.html">Home</a></li>
+                        <li><a href="02 02 Estructurando la navegacion.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            
+            </div>
+
+        </header>
+
+    </body>
+
+</html>
+
+<!-- 
+    En .css creamos "nav" y editamos el estilo:
+        nav{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+    Para poder editar en el encabezado tanto el elemento de la imagen como el del menu de navegacion, creamos un "div" en el "header" que los contenga.
+    
+    Ademas, por las dudas a este div lo determinamos con una clase class="cajaHeader",
+
+    Entonces en .css:
+        .cajaHeader{
+            width: 940px;   //le aplicamos ese ancho ya que mayoria de pantallas tiene 1280px de formato. QUe ocupe un 70% del ancho.
+            position: relative; //por defecto viene en posicion estatica en relacion a la posicion absoluta que habiamos definido para nuestro menù. Entonces lo cambiamos a "relative".
+            margin: 0 auto;     //0 para superior e inferior, y auto para los bordes, de paso para que calcule en funcion a la resolucion que estè utilizando el usuario, dando siempre la sensacion de centrado.
+    Tambien modificamos el borde externo:
+        header{
+            background-color: #BBBBBB ;
+            padding: 20px 0; //propiedad de borde externo, 20px para superior e inferior, y 0 para los laterales.
+        }
+    "La mejor técnica para alinear una div al centro: Usar el cálculo de margin automático: Delegamos para que el navegador haga la cuenta al calcular la largura restante, dividir entre dos y agregar la mitad en cada uno de los lados."
+––>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Dowloads/reset.css">
+
+        <link rel="stylesheet" href="stylePRODUCTOS11.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="dowloads/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="HOME.html">Home</a></li>
+                        <li><a href="02 02 Estructurando la navegacion.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="Dowloads/imagenes/cabello.jpg">
+                    <p class="descripcion">Con tijera o màquina a gusto del cliente.</p>
+                    <p class="precio">$1500</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="Dowloads/imagenes/barba.jpg">
+                    <p class="descripcion">Corte y diseño profesional de barba</p>
+                    <p class="precio">$500</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="Dowloads/imagenes/cabello+barba.jpg">
+                    <p class="descripcion">Paquete completo de cabello y barba</p>
+                    <p class="precio">$1800</p>
+                </li>
+            </ul>
+        </main>
+            
+        <footer>
+            <img src="Dowloads/imagenes/logo-blanco.png">
+            <p class="Copyrigth">&copy Copyrigth Barberia Alura - 2023</p>
+        </footer>
+
+    </body>
+
+</html>
+
+<!-- 
+    Dentro de "footer", a "p" le agregamos la clase "copyrigth" para poder editarla en el .css:
+    .Copyrigth{
+        color: #ffffff;
+        font-size: 13px;
+    }
+
+    Como agregar caracteres especiales:
+    Diccionario unico indo-europeo -occidental- simbolos unicode: 
+    visitamos unicode-table.com
+    Buscamos "copyrigth" y ahì nos muestra como usar segun codigo, elegimos "Entidad" que seria "&copy". Quedando asì:
+    <p class="Copyrigth">&copy Copyrigth Barberia Alura - 2023</p>
+
+    Por ultimo agregamos en .css
+    margen externo de 20px:
+
+    .Copyrigth{
+        color: #ffffff;
+        font-size: 13px;
+        margin: 20px;
+    }
+
+    "Los caracteres Unicode están disponibles para ser usados como un complemento a nuestro texto."
+
+––>

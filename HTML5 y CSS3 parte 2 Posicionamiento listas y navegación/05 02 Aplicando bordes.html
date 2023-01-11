@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Dowloads/reset.css">
+
+        <link rel="stylesheet" href="stylePRODUCTOS6.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="dowloads/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="HOME.html">Home</a></li>
+                        <li><a href="02 02 Estructurando la navegacion.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="Dowloads/imagenes/cabello.jpg">
+                    <p class="descripcion">Con tijera o màquina a gusto del cliente.</p>
+                    <p class="precio">$1500</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="Dowloads/imagenes/barba.jpg">
+                    <p class="descripcion">Corte y diseño profesional de barba</p>
+                    <p class="precio">$500</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="Dowloads/imagenes/cabello+barba.jpg">
+                    <p class="descripcion">Paquete completo de cabello y barba</p>
+                    <p class="precio">$1800</p>
+                </li>
+            </ul>
+        </main>
+
+    </body>
+
+</html>
+
+<!-- 
+    Vemos la pagina en el navegador, desde la consola de desarrollador navegamos hasta las li y visualizamos como funciona el "margin", "border", "padding" y el elemento nucleo.
+
+    Luego vamos al .css para modificar "border":
+    .productos li{
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        background: #CCCCCC;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    Tambien podemos simplificar:
+    .productos li{
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        background: #CCCCCC;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: #000000 solid 2px; //color, tipo de linea de borde, y ancho de la misma.
+    }
+
+    "En la estructura de “cajas” del CSS, un borde queda posicionado entre el padding y el margin."
+––>

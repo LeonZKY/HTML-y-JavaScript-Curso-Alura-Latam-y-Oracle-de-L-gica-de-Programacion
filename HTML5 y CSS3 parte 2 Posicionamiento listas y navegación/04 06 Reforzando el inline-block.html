@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Dowloads/reset.css">
+
+        <link rel="stylesheet" href="stylePRODUCTOS4.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="dowloads/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="HOME.html">Home</a></li>
+                        <li><a href="02 02 Estructurando la navegacion.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="Dowloads/imagenes/cabello.jpg">
+                    <p class="descripcion">Con tijera o màquina a gusto del cliente.</p>
+                    <p class="precio">$1500</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="Dowloads/imagenes/barba.jpg">
+                    <p class="descripcion">Corte y diseño profesional de barba</p>
+                    <p class="precio">$500</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="Dowloads/imagenes/cabello+barba.jpg">
+                    <p class="descripcion">Paquete completo de cabello y barba</p>
+                    <p class="precio">$1800</p>
+                </li>
+            </ul>
+        </main>
+
+    </body>
+
+</html>
+
+<!-- 
+    Mejoramos la disposicion ya que por defecto viene en bloque, una seguida de otra de manera vertical.
+    Vemos pagina w3schools.com donde explica The display Property y como funciona cada propiedad de display: inline, inline-block, block.
+
+    Para identificar la "ul" le colocamos una clase "producto" para luego en el .css identificarla y editar su estilo.
+
+    Entonces vamos al .css
+        .productos {                toda nuestra lista de producto
+            width: 940px;           //ancho que queremos que utilice
+            margin: 0 auto;         //para que distribuya laterales de manera automatica
+            padding: 50px;          /borde exterior de 50px
+        }
+
+        .productos li{                  //
+            display: inline-block;
+            text-align: center;         //textos alineados al centro
+            width: 30%;                 //modificamos para que el ancho de cada bloque sea el mismo ocupe el 30% del espacio total, el 10% restante se distribuye automaticamente.
+            vertical-align: top;    //alineacion de los items sea vertical
+        }
+
+        .productos h2{          //selector de nuestro h2
+            font-size: 30px;    //tamaño
+            font-weight: bold;  //negrita
+        }
+
+        .descripcion{
+            font-size: 18px;    //tamaño texto de descripcion
+        }
+
+        .precio{
+            font-size: 20px;    //tamaño texto de los precios
+            font-weight: bold;  //negrita
+            margin-top: 10px;   //margen superior 10px
+        }
+
+    "Un elemento que tiene su display con el valor inline-block: Deja ajustar el tamaño de su contenido, de manera regulable, su largo como su alto."
+––>

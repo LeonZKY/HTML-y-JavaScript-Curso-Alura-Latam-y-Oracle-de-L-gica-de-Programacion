@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Productos - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Dowloads/reset.css">
+
+        <link rel="stylesheet" href="stylePRODUCTOS9.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="dowloads/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="HOME.html">Home</a></li>
+                        <li><a href="02 02 Estructurando la navegacion.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="Dowloads/imagenes/cabello.jpg">
+                    <p class="descripcion">Con tijera o màquina a gusto del cliente.</p>
+                    <p class="precio">$1500</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="Dowloads/imagenes/barba.jpg">
+                    <p class="descripcion">Corte y diseño profesional de barba</p>
+                    <p class="precio">$500</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="Dowloads/imagenes/cabello+barba.jpg">
+                    <p class="descripcion">Paquete completo de cabello y barba</p>
+                    <p class="precio">$1800</p>
+                </li>
+            </ul>
+        </main>
+
+    </body>
+
+</html>
+
+<!-- 
+    En el .css:
+    Utilizamos la propiedad "hover" captura el movimiento pero ahora a nuestros productos, con el selector "productos li" :
+        .productos li:hover{
+            border-color: #c78c19;
+        }
+    
+    Para que al pasar el mouse por "productos li", el "h2" cambie de tamaño:
+        .productos li:hover h2{
+            font-size: 33px;
+        }
+    Para que al hacer click sobre los elementos "productos li", lo llamamos y utilizamos propiedad "active", luego definimos que queremos que cambie a color verde al hacer click:
+        .productos li:active{
+            border-color: #088c19;
+        }
+
+––>
