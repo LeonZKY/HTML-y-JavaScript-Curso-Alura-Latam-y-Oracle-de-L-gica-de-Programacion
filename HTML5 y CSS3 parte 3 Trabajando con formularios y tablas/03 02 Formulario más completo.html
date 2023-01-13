@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Contacto - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Previos/reset.css">
+
+        <link rel="stylesheet" href="styleCONTACTO2.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="Previos/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="Previos/HOME.html">Home</a></li>
+                        <li><a href="Previos/PRODUCTOS.html">Productos</a></li>
+                        <li><a href="01 03 Comenzando la página de contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <form>
+                <label for="nombreApellido">Nombre y apellido:</label>
+                <input type="text" id="nombreApellido">
+
+                <label for="correoElectronico">Correo correoElectronico:</label>
+                <input type="text" id="Correo">
+
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea cols="68" rows="10" id="mensaje"></textarea>
+
+
+                <div>
+
+                    <p>Còmo te gustaria que te contactemos?</p>
+
+                    <label for="radio-email">Email:</label>
+                    <input type="radio" name="contacto" value="email" id="radio-email">
+
+                    <label for="radio-telefono">Telefono:</label>
+                    <input type="radio" name="contacto"  value="telefono" id="radio-telefono">
+
+                    <label for="radio-whatsapp">whatsapp:</label>
+                    <input type="radio" name="contacto"  value="whatsapp" id="radio-whatsapp">
+
+                </div>
+
+                <label><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura?</label>
+
+                <input type="submit" value="Enviar formulario">
+
+            </form>
+        </main>
+            
+        <footer>
+            <img src="Previos/imagenes/logo-blanco.png">
+            <p class="Copyrigth">&copy Copyrigth Barberia Alura - 2023</p>
+        </footer>
+
+    </body>
+
+</html>
+
+<!-- 
+    Vemos "input" mas complejos, como "textarea" - un cuadro de ingreso de texto que se puede modificar sus dimensiones manualmente por el usuario-, multiple-choise con "radio" y por ultimo un check-box.
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea cols="70" rows="10" id="mensaje"></textarea>
+
+    "cols": columna
+    "rows": lineas o filas
+
+    <label for="radio-email">Email:</label>
+    <input type="radio" name="contacto" value="email" id="radio-email">
+
+    Cuando usuamos "radio" necesitamos usar un "value" un valor de ese "input"
+
+    Agregamos los otros dos "input" "radio" copiando, pegando y modificando para "telefono" y "Whatsapp".
+
+    Por ultimo para que no nos deje seleccionar todos los "radio", o sea que solo podamos seleccionar uno de esas opciones. 
+    Le colocamos a todos los input el atributo "name=contacto" para agruparlos juntos y que nos deje elegir solo uno.
+
+    Colocamos una etiqueta "p" para titulo de estas opciones, y las agrupamos este bloque dento dentro de un "div"
+
+    Agregamos un "input" "type=" "checkbox" pero dentro del mismo "label":
+
+    <label><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura?</label>
+
+    "La propiedad de un input del tipo radio que necesito crear para que todos los elementos formen parte del mismo grupo:
+    La propiedad "name" solo se puede “completar” una vez, es por eso que, cuando seleccionamos uno de los ítems, se anula el otro, manteniendo solamente uno seleccionado."
+
+––>

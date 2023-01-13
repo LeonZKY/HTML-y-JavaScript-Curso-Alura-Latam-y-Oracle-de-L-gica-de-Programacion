@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8" >
+
+        <title>Contacto - Barberìa Alura</title>
+
+        <link rel="stylesheet" href="Previos/reset.css">
+
+        <link rel="stylesheet" href="styleCONTACTO1.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <div class="cajaHeader">
+
+                <h1><img src="Previos/imagenes/logo.png"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="Previos/HOME.html">Home</a></li>
+                        <li><a href="Previos/PRODUCTOS.html">Productos</a></li>
+                        <li><a href="01 03 Comenzando la página de contacto.html">Contactos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <form>
+                <label for="nombreApellido">Nombre y apellido:</label>
+                <input type="text" id="nombreApellido">
+
+                <label for="correoElectronico">Correo correoElectronico:</label>
+                <input type="text" id="Correo">
+
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono">
+
+                <input type="submit" value="Enviar formulario">
+
+            </form>
+        </main>
+            
+        <footer>
+            <img src="Previos/imagenes/logo-blanco.png">
+            <p class="Copyrigth">&copy Copyrigth Barberia Alura - 2023</p>
+        </footer>
+
+    </body>
+
+</html>
+
+<!-- 
+    Vamos a nuestro .css:
+    Primero vamos a centralizar nuestros elementos utilizando la etiqueta "main" y colocando que utilice el ancho de 940px y con margenes de 0 (para arriba y abajo) y auto (para los costados.)
+
+    main{
+        width: 940px;
+        margin: 0 auto;
+    }
+    
+    Cabe considerar que el display por defecto para "form" como los "input" (formularios) es in-line (cuando ocupan el espacio solo de su contenido), por lo que cambiaremos a bloque (cuando ocupan el 100% de la pagina) para que se organice verticalmente. 
+
+    form label{
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+
+    form input{
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        width: 50%;
+    }
+
+    Luego, colocaremos a todo el fomulario un margen con "margin", 40px para arriba, y 0 para los costados.
+
+    form {
+        margin: 40px 0;
+    }
+    
+
+    Espaciamiento interno de nuestro input. Con "padding", 10px superior e inferior y 25px para los costados.
+
+    Luego definimos el ancho de nuestros "input". Con un "width" del 50% de la pagina. Tambien sera inpactado en nuestro "input= "submit""" porque no le hemos definido clases en especifico.
+
+    "La propiedad padding sirve para cambiar el espaciado interno, entre el contenido y el borde."
+––>
